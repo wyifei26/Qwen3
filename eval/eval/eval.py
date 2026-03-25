@@ -9,6 +9,9 @@ ALL_TASKS = {}
 from arc_agi_1 import compute_scores_arc_agi_1
 ALL_TASKS['arc_agi_1'] = compute_scores_arc_agi_1
 
+from gsm8k import compute_scores_gsm8k
+ALL_TASKS['gsm8k'] = compute_scores_gsm8k
+
 def get_after_think(text):
     parts = text.split("\n</think>\n\n", 1)
     if len(parts) > 1:
